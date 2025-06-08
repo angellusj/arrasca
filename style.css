@@ -1,0 +1,286 @@
+@font-face {
+  font-family: 'Cristal Universe';
+  src: url('fontes/CrystalUniverse-Oblique.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Xirod';
+  src: url('fontes/Xirod.otf') format('opentype');
+}
+
+body {
+  margin: 0;
+  background-color: #ffc0cb; /* Rosa claro */
+  position: relative;
+  overflow: hidden; 
+}
+
+.star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: white;
+  border-radius: 50%;
+  opacity: 0.8;
+  box-shadow: 0 0 6px rgba(255, 192, 203, 0.8);
+  animation: twinkle 2s infinite ease-in-out;
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.3; transform: scale(1); }
+  50%      { opacity: 1; transform: scale(1.5); }
+}
+
+.glitter-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card {
+  text-align: center;
+  width: 90%;
+  max-width: 600px;
+}
+
+.img-center {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px double #ff66cc;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 15px #ffc3e0;
+}
+
+h1 {
+  font-family: 'Cristal Universe', sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  font-style: oblique;
+  color: #ff69b4;
+  text-transform: lowercase;
+  letter-spacing: -2px;
+  transform: skewX(-10deg);
+  text-shadow:
+    -2px -2px 0 black,
+     2px -2px 0 black,
+    -2px  2px 0 black,
+     2px  2px 0 black;
+}
+
+p {
+  font-family: 'Xirod', sans-serif;
+  font-size: 11px;
+  color: #ff1493;
+  margin: 0.5rem 0;
+  line-height: 1.5;
+}
+
+.mensagem {
+  font-size: 1.1rem;
+  color: #993399;
+  margin-bottom: 1.2rem;
+  line-height: 1.6;
+}
+
+footer {
+  font-style: italic;
+  color: #cc66cc;
+  margin-top: 2rem;
+  font-size: 1rem;
+}
+
+.img-2019 {
+  position: absolute;
+  top: 30px;     /* distância do topo */
+  left: 40px;    /* distância da esquerda */
+  width: 200px;  /* tamanho da imagem */
+  z-index: 10;   /* garante que a imagem fique visível */
+}
+
+.img-bandeirao {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  width: 200px;
+  z-index: 10;
+}
+
+.img-arrascanabbis {
+  position: absolute;
+  bottom: 20px;  /* distância do fundo */
+  left: 200px;     /* centraliza horizontalmente */
+  width: 200px;  /* tamanho da imagem */
+  z-index: 10;   /* garante que a imagem fique visível */
+}
+
+.img-arrascoracao {
+  position: absolute;
+  bottom: 20px;  /* distância do fundo */
+  right: 200px;   /* centraliza horizontalmente */
+  width: 200px;  /* tamanho da imagem */
+  z-index: 10;   /* garante que a imagem fique visível */
+}
+
+.img-escutaai {
+  position: absolute;
+  top: 80px;  /* distância do fundo */
+  right: 370px;     /* centraliza horizontalmente */
+  width: 200px;  /* tamanho da imagem */
+  z-index: 10;   /* garante que a imagem fique visível */
+}
+
+.img-arrascaneta {
+  position: absolute;
+  top: 80px;  /* distância do fundo */
+  left: 370px;     /* centraliza horizontalmente */
+  width: 200px;  /* tamanho da imagem */
+  z-index: 10;   /* garante que a imagem fique visível */
+}
+
+.img-arrascabicha {
+  position: absolute;
+  bottom: 20px;  /* distância do fundo */
+  left: 650px;     /* centraliza horizontalmente */
+  width: 200px;  /* tamanho da imagem */
+  z-index: 10;   /* garante que a imagem fique visível */
+}
+
+.texto-info {
+  position: absolute;
+  top: 340px;       /* distancia do topo */
+  left: 1150px;
+  right: 60px;
+}
+
+.img-dancameufilhodanca {
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  top: 30px;  /* distância do fundo */
+  left: 695px;   /* centraliza horizontalmente */
+  width: 110px;  /* tamanho da imagem */
+  z-index: 10;   /* garante que a imagem fique visível */
+}
+
+.img-arrascabencoado {
+  position: absolute;
+  bottom: 20px;  /* distância do fundo */
+  left: 460px;   /* centraliza horizontalmente */
+  width: 100px;  /* tamanho da imagem */
+  z-index: 10;   /* garante que a imagem fique visível */
+}
+
+.img-coracao {
+  position: absolute;
+  bottom: 20px;  /* distância do fundo */
+  right: 470px;   /* centraliza horizontalmente */
+  width: 100px;  /* tamanho da imagem */
+  z-index: 10;   /* garante que a imagem fique visível */
+}
+
+.img-hellokitty {
+  position: absolute;
+  top: 70px;  /* distância do topo */
+  right: 260px;   /* centraliza horizontalmente */
+  width: 100px;  /* tamanho da imagem */
+  z-index: 10;   /* garante que a imagem fique visível */
+}
+
+.img-coracoes {
+  position: absolute;
+  top: 216px;       /* distância do topo */     
+  right: 596px; /* distância da esquerda */
+  width: 300px;  /* largura total */
+  z-index: 10; 
+}
+
+.img-lace {
+  position: absolute;
+  top: -95px;       /* distância do topo */     
+  left: 0px; /* distância da esquerda */
+  width: 300px;  /* largura total */
+  z-index: 10; 
+}
+
+.img-lace2 {
+  position: absolute;
+  top: -95px;       /* distância do topo */     
+  left: 300px; /* distância da esquerda */
+  width: 300px;  /* largura total */
+  z-index: 10; 
+}
+
+.img-lace3 {
+  position: absolute;
+  top: -95px;       /* distância do topo */     
+  left: 600px; /* distância da esquerda */
+  width: 300px;  /* largura total */
+  z-index: 10; 
+}
+
+.img-lace4 {
+  position: absolute;
+  top: -95px;       /* distância do topo */     
+  left: 900px; /* distância da esquerda */
+  width: 300px;  /* largura total */
+  z-index: 10; 
+}
+
+.img-lace5 {
+  position: absolute;
+  top: -95px;       /* distância do topo */     
+  left: 1200px; /* distância da esquerda */
+  width: 300px;  /* largura total */
+  z-index: 10; 
+}
+
+.img-topo {
+  position: absolute;
+  top: -12px;       /* distância do topo */     
+  left: -5px; /* distância da esquerda */
+  width: 200px;  /* largura total */
+  z-index: 10;   /* garante que a imagem fique atrás de outros elementos */
+}
+
+.img-topo2 {
+  position: absolute;
+  top: -12px;       /* distância do topo */     
+  right: -6px; /* distância da esquerda */
+  width: 200px;  /* largura total */
+  z-index: 10;   /* garante que a imagem fique atrás de outros elementos */
+  transform: scaleX(-1);
+}
+
+.img-kiss {
+  position: absolute;
+  top: 380px;  /* distância do topo */
+  left: 400px;   /* centraliza horizontalmente */
+  width: 150px;  /* tamanho da imagem */
+  z-index: 10;   /* garante que a imagem fique visível */
+}
+
+.img-wink {
+  position: absolute;
+  top: 380px;  /* distância do topo */
+  right: 400px;   /* centraliza horizontalmente */
+  width: 100px;  /* tamanho da imagem */
+  z-index: 10;   /* garante que a imagem fique visível */
+}
+
+.img-lacinho {
+  position: absolute;
+  top: 227px;  /* distância do topo */
+  left: 650px;   /* centraliza horizontalmente */
+  width: 80px;  /* tamanho da imagem */
+  z-index: 10;   /* garante que a imagem fique visível */
+}
+
+body {
+  background-image: url('imagens/heart-love.gif'); /* seu GIF ou imagem */
+  background-repeat: repeat;
+  background-size: 30px;
+}
+
